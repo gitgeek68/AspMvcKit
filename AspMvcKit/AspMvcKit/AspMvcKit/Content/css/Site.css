@@ -1,9 +1,8 @@
-﻿#entete, #Aside, #Links, #Sitemap, #RenderBody, #date {
+﻿#entete, #Aside, #Links, #Sitemap, #RenderBody, #date
+{
     border: 1px solid;
     border-color: black;
-    border-radius: 2px;
-    border-top-left-radius:5px;
-    border-top-right-radius:5px;
+   
 }
 
 #titre {
@@ -43,11 +42,6 @@ main,body, header
     margin-bottom: 10px;
 }
 
-header
-{
-   
-}
-
 #entete {
    
     padding-top:10px;
@@ -61,4 +55,27 @@ header
 #titre4
 {
  margin-left:-10px;   
+}
+#RenderBody 
+{
+    border-right: none;
+}
+
+
+#RenderBody, #entete, #Links {
+    border-top-left-radius:5px; 
+}
+
+#date,#Aside,#entete
+{
+    border-top-right-radius:5px;
+}
+
+#Links,#Sitemap 
+{
+    border-right: none;
+}
+h1
+{
+/*font-weight:bold;*/
 }
