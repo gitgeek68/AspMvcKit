@@ -15,54 +15,99 @@
 
 </head>
 <body>
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Brand</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                           Menu #1
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Menu #2</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Menu #3</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Menu #4</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
 
-        <header class="row" id="entete"></header>
-
-
-
-
-        <div class="container body-content">
-            <hr />
-            @RenderBody()
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Brand</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Menu #1
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Menu #2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Menu #3</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Menu #4</a>
+                </li>
+            </ul>
         </div>
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
+    </nav>
 
+
+
+
+    <div class="container">
+        <header class="row" id="entete">
+            <div class="col col-lg-12">
+                <img src="holder.js/300x200" id="holder">
+
+                <div class="titre">
+                    <h1>Application Title</h1>
+                    <h2>Application SubTitle</h2>
+                </div>
+            </div>
+        </header>
+
+
+
+
+        <div class="row">
+            <div class="col-lg-8" id="RenderBody">
+
+                @RenderBody()
+
+            </div>
+            <div class="col-lg-2" id="Aside">
+                <h2>Aside</h2>
+            </div>
+        </div>
+        <footer class="row" id="pied">
+
+
+            <div class="col-lg-4" id="Links">
+
+
+                <h4>Links</h4>
+                <a class="nav-link" href="#">Link #1</a>
+                <a class="nav-link" href="#">Link #2</a>
+                <a class="nav-link" href="#">Link #3</a>
+
+
+            </div>
+
+            <div class="col-lg-4" id="Sitemap">
+
+
+                <h4>Sitemap</h4>
+                <a class="nav-link" href="#">Link #1</a>
+                <a class="nav-link" href="#">Link #2</a>
+                <a class="nav-link" href="#">Link #3</a>
+
+
+            </div>
+
+            <div class="col-lg-2" id="date">
+                <p>&copy; Copyright @DateTime.Now.Year  </p>
+            </div>
+
+        </footer>
     </div>
 
-
 </body>
+
+
 </html>

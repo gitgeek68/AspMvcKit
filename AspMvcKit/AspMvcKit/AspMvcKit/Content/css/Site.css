@@ -1,2 +1,35 @@
-﻿body {
+﻿#entete,#Aside,#Links,#Sitemap,#RenderBody,#date
+{
+    border: 1px solid;
+    border-color: black;
+    margin: 2px;
+    border-radius: 2px;
+    padding: 5px;
+}
+
+.titre {
+    margin-top: 5px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+}
+
+img {
+    width: 300px;
+    height: 200px;
+    margin-right: 10px;
+    opacity: 0.9;
+    margin-left:1px;
+
+}
+
+
+
+
+body {
+    border: 1px solid;
+    border-color: black;
+    margin: 2px;
+    border-radius: 2px;
+    padding: 5px;
 }
