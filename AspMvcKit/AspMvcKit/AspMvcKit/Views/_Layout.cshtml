@@ -16,7 +16,7 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
         <a class="navbar-brand" href="#">Brand</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -51,11 +51,11 @@
 
 
     <div class="container">
-        <header class="row" id="entete">
-            <div class="col col-lg-12">
+        <header class="row">
+            <div class="col col-lg-12" id="entete">
                 <img src="holder.js/300x200" id="holder">
 
-                <div class="titre">
+                <div id="titre">
                     <h1>Application Title</h1>
                     <h2>Application SubTitle</h2>
                 </div>
@@ -65,37 +65,53 @@
 
 
 
-        <div class="row">
-            <div class="col-lg-8" id="RenderBody">
+        <main>
+            <div class="row">
+                <div class="col-lg-10" id="RenderBody">
 
-                @RenderBody()
+                    @RenderBody()
 
+                </div>
+                <div class="col-lg-2" id="Aside">
+                    <h2>Aside</h2>
+                </div>
             </div>
-            <div class="col-lg-2" id="Aside">
-                <h2>Aside</h2>
-            </div>
-        </div>
+        </main>
         <footer class="row" id="pied">
 
 
-            <div class="col-lg-4" id="Links">
+            <div class="col-lg-5" id="Links">
 
-
-                <h4>Links</h4>
-                <a class="nav-link" href="#">Link #1</a>
-                <a class="nav-link" href="#">Link #2</a>
-                <a class="nav-link" href="#">Link #3</a>
-
+                <h4 id="titre4">Links</h4>
+                <ul>
+                    <li>
+                        <a class="nav-link" href="#">Link #1</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">Link #2</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">Link #3</a>
+                    </li>
+                </ul>
 
             </div>
 
-            <div class="col-lg-4" id="Sitemap">
+            <div class="col-lg-5" id="Sitemap">
 
 
                 <h4>Sitemap</h4>
-                <a class="nav-link" href="#">Link #1</a>
-                <a class="nav-link" href="#">Link #2</a>
-                <a class="nav-link" href="#">Link #3</a>
+                <ul>
+                    <li>
+                        <a class="nav-link" href="#">Link #1</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">Link #2</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">Link #3</a>
+                    </li>
+                </ul>
 
 
             </div>
